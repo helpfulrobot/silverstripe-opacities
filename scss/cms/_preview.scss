@@ -1,0 +1,26 @@
+.opacities {
+	&-cms {
+		&-preview {
+			&-wrapper {
+				background-image: url('../../img/cmspreview.jpg');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				height: 150px;
+				max-width: 267px;
+				position: relative;
+				width: 100%;
+			}
+
+			&-screen {
+				background: black;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+	}
+}
