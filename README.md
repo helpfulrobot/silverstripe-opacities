@@ -126,7 +126,7 @@ Code Examples
 		<body>
 			<div
 				class="
-					<% if $MyOpacity %>$MyOpacity.CSSClass %>
+					<% if $MyOpacity %>$MyOpacity.CSSClass<% end_if %>
 				"
 			>
 				Faded Text
