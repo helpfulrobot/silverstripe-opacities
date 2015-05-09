@@ -1,11 +1,12 @@
 {
     "name": "stephenjcorwin/silverstripe-opacities",
-    "description": "SilverStripe module which provides an [Opacity] DataObject and a Settings->Appearance->Opacities menu for managing your website's Opacities.",
+    "description": "SilverStripe module which provide a `Opacity` DataObject and a `Settings->Appearance->Opacities` Menu for managing your website's Opacities.",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/stephenjcorwin/silverstripe-opacities/",
     "keywords": [
         "silverstripe",
         "opacity"
     ],
-    "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -14,9 +15,11 @@
             "homepage": "http://stephenjcorwin.com"
         }
     ],
-    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/stephenjcorwin/silverstripe-opacities/issues"
+    },
     "require": {
-        "php": ">=5.3.0",
-        "silverstripe/cms": ">=3.1.0"
+        "silverstripe/cms": "~3.1",
+        "silverstripe/framework": "~3.1"
     }
 }
