@@ -1,0 +1,10 @@
+---
+Name: silverstripe-opacities
+---
+SiteConfig:
+  extensions:
+    - Opacities_SiteConfigExtension
+
+LeftAndMain:
+  extra_requirements_css:
+    - silverstripe-opacities/css/cms/min.css

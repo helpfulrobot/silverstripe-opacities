@@ -137,5 +137,5 @@ Code Examples
 
 ####`themes/themes/mytheme/templates/Includes/Style.ss`
     <style>
-		<% include Opacity_Style Data=$Opacities %>
+		<% with $Opacities %><% include Opacity_Style %><% end_with %>
 	</style>

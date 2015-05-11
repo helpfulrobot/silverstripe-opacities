@@ -1,18 +1,6 @@
 <?php
 class Opacities_SiteConfigExtension extends DataExtension {
   /**
-    FIELDS
-  **/
-
-  static $db = array (
-  );
-
-  public static $default_sort='';
-
-  static $summary_fields = array (
-  );
-
-  /**
     CMS FIELDS
   **/
 

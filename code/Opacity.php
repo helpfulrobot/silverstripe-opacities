@@ -4,22 +4,22 @@ class Opacity extends DataObject {
     FIELDS
   **/
 
-  static $db = array (
+  private static $db = array (
     'Name' => 'Text',
     'Value' => 'Float'
   );
 
-  static $defaults = array (
+  private static $defaults = array (
     'Value' => 0
   );
 
-  public static $default_sort='Value ASC';
+  private static $default_sort='Value ASC';
 
   /**
     DEFAULT RECORDS
   **/
 
-  static $default_records = array (
+  private static $default_records = array (
     array (
       'Name' => 'Transparent',
       'Value' => 0
@@ -66,7 +66,7 @@ class Opacity extends DataObject {
     return true;
   }
 
-  static $summary_fields = array (
+  private static $summary_fields = array (
     'Name' => 'Name',
     'Value' => 'Value',
     'CMSPreview' => 'Preview'
