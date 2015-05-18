@@ -12,6 +12,7 @@ Maintainer Contact
 Requirements
 ---------------------------------------
 -   SilverStripe 3.1
+-   [stephenjcorwin/silverstripe-style-sheet](https://github.com/stephenjcorwin/silverstripe-style-sheet)
 
 Features
 ---------------------------------------
@@ -33,7 +34,7 @@ Installation can be done either by composer or by manually downloading a release
 
 ####Configuration:
 -   After installation, make sure you rebuild your database through `dev/build`
--	You should see the a new Menu in the CMS for managing `Opacities` available through the Menu `Settings->Appearance->Opacities`
+-	You should see the a new Menu in the CMS for managing `Opacities` available through the `Settings->Appearance->Opacities` Menu
 
 Uninstall
 ---------------------------------------
@@ -53,8 +54,8 @@ Code Examples
 ####`mysite/code/MyDataObject.php`
     <?php
     class MyDataObject extends DataObject {
-        static $has_one = array (
-            'MyOpacity' => 'Opacity',
+        private static $has_one = array (
+            'MyOpacity' => 'Opacity'
         );
     
         public function getCMSFields() {
@@ -110,19 +111,11 @@ Code Examples
     	public function init() {
 			parent::init();
 		}
-
-    	public function getOpacities() {
-			$data = DataObject::get('Opacity');
-			return $data;
-		}
     }
 
-####`themes/themes/mytheme/templates/Page.ss`
+####`themes/mytheme/templates/Page.ss`
     <!DOCTYPE html>
-	<html lang="$ContentLocale">
-	<head>
-		<% include Style %>
-	</head>
+	<html>
 		<body>
 			<div
 				class="
@@ -134,8 +127,3 @@ Code Examples
 			$Layout
 		</body>
 	</html>
-
-####`themes/themes/mytheme/templates/Includes/Style.ss`
-    <style>
-		<% with $Opacities %><% include Opacity_Style %><% end_with %>
-	</style>
