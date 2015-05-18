@@ -71,7 +71,7 @@ class Opacity extends StyleObject {
     $field = new NumericField('Value');
     $fields->addFieldToTab($tab, $field);
 
-    $html = ViewableData::renderWith('Opacities_CMS_Preview');
+    $html = ViewableData::renderWith('Opacity_CMS_Preview');
     $field = new LiteralField('Preview', $html);
     $fields->addFieldToTab($tab, $field);
     
@@ -79,7 +79,7 @@ class Opacity extends StyleObject {
   }
 
   public function getCMSPreview() {
-    $html = ViewableData::renderWith('Opacities_CMS_Preview');
+    $html = ViewableData::renderWith('Opacity_CMS_Preview');
     $obj = HTMLText::create();
     $obj->setValue($html);
     return $obj;

@@ -3,7 +3,7 @@ Name: silverstripe-opacities
 ---
 SiteConfig:
   extensions:
-    - Opacities_SiteConfigExtension
+    - Opacity_SiteConfigExtension
 
 LeftAndMain:
   extra_requirements_css:

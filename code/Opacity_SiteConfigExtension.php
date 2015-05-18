@@ -1,5 +1,5 @@
 <?php
-class Opacities_SiteConfigExtension extends DataExtension {
+class Opacity_SiteConfigExtension extends DataExtension {
   /**
    *  CMS FIELDS
    */
